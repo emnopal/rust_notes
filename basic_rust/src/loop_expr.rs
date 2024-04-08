@@ -107,7 +107,7 @@ fn array_iter_for_index3() {
 #[test]
 fn array_iter_for_inclusive_index4() {
     let arr: [char; 5] = ['a', 'b', 'c', 'd', 'e'];
-    let range = 0..=4; // equivalent with 0..5 or 0..(4+1) or 0..((5-1)+1)
+    let range = 0..=4; // this is inclusive, equivalent with 0..5 or 0..(4+1) or 0..((5-1)+1)
     println!("Start: {}", range.start()); // notice diff here inclusive need call method, ordinary not
     println!("End: {}", range.end()); // notice diff here inclusive need call method, ordinary not
 
@@ -134,7 +134,7 @@ fn iter_range() {
 
 #[test]
 fn iter_range_inclusive() {
-    for i in 1..=10 { // equivalent with 1..11 or 1..(10+1)
+    for i in 1..=10 { // this is inclusive, equivalent with 1..11 or 1..(10+1)
         println!("Range: {i}");
     }
 }
