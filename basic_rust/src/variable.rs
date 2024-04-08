@@ -8,6 +8,9 @@ fn simple() {
 #[test]
 fn simple_assign() {
     // or you can explicitly put variable inside string (f-string)
+    // but note, any operation not work if u use this, just simple assign to fstring
+    // println!("Hello Guys, {example_variable}"); // ok
+    // println!("Hello Guys, {example_variable.to_lowercase()}"); // not work
     let example_variable = "This is Rust Very Simple Variable with F-String";
     println!("Hello Guys, {example_variable}");
 }

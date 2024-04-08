@@ -1,7 +1,6 @@
 // cargo new <project_name> to create a new rust project
 
-// to add another file here, so it can be executed by compiler
-// you must add it even for only simple unit test 
+// note: this is only for unit test in another file other than main.rs
 mod variable;
 mod rust_type;
 mod operations;
@@ -10,6 +9,12 @@ mod tuple;
 mod array;
 mod memory_management;
 mod string;
+mod ownership;
+mod loop_expr;
+
+// for explanation of module here
+// to add another file here, so it can be executed by compiler
+// you must add it even for only simple unit test 
 
 fn main() {
     // print!("Hello, world!"); // text

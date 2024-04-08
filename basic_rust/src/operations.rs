@@ -60,15 +60,57 @@ fn comparison() {
         println!("a and b equal")
     }
 
-    // comparison 2 (variable)
+    // comparison 2 (if else if else)
+    if a >= b {
+        println!("a is greater or equal to b")
+    } else if a > b {
+        println!("a is greater than b")
+    } else if a < b {
+        println!("a is less than b")
+    } else if a <= b {
+        println!("a is less or equal to b")
+    } else {
+        println!("not match")
+    }
+
+    // comparison 3 (let statement)
+    let result: &str;
+    if a >= b {
+        result = "a is greater or equal to b";
+    } else if a > b {
+        result = "a is greater than b";
+    } else if a < b {
+        result = "a is less than b";
+    } else if a <= b {
+        result = "a is less or equal to b";
+    } else {
+        result = "not match";
+    }
+    println!("{result}");
+
+    // comparison 4 (if let statement)
+    let res = if a >= b {
+        "a is greater or equal to b"
+    } else if a > b {
+        "a is greater than b"
+    } else if a < b {
+        "a is less than b"
+    } else if a <= b {
+        "a is less or equal to b"
+    } else {
+        "not match"
+    };
+    println!("{res}");
+
+    // comparison 5 (variable)
     let c: bool = a >= b;
     println!("does b is greater than equal to b: {c}");
 
-    // comparison 3 (ternary)
+    // comparison 6 (ternary)
     let d: &str = if a == b {"Equal"} else {"Not Equal"};
     println!("{d}");
 
-    // comparison 4 (boolean ops)
+    // comparison 7 (boolean ops)
     let f = 64;
     let g = f > 0 && f > a * b; // &&, it should be false since 12*32 >> 64
     println!("{g}");
