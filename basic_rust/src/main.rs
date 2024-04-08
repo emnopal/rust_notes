@@ -4,8 +4,14 @@
 // you must add it even for only simple unit test 
 mod variable;
 mod rust_type;
+mod operations;
+mod char_type;
+mod tuple;
+mod array;
+mod memory_management;
+mod string;
 
-fn main() {    
+fn main() {
     // print!("Hello, world!"); // text
     println!("Hello, world!"); // text + "/n"
     // note: valid string is only "" not like php, js or python which can be '' or ""
