@@ -51,11 +51,36 @@ impl GeoPoint {
     fn new(long: f64, lat: f64) -> GeoPoint { // this method is not bound to their instance
         GeoPoint(long, lat)
     }
+    fn get_longitude(&self) {
+        println!("Longitude: {}", self.0);
+    }
+    fn get_latitude(&self) {
+        println!("Latitude: {}", self.1);
+    }
 }
 
 #[test]
 fn test_geopoint() {
     let geo_point: GeoPoint = GeoPoint::new(-6.200000, 106.400000);
+
+    // without method
     println!("Longitude: {}", geo_point.0);
     println!("Latitude: {}", geo_point.1);
+
+    // with method
+    geo_point.get_latitude();
+    geo_point.get_longitude();
+}
+
+#[test]
+fn test_geopoint2() {
+    let geo_point: GeoPoint = GeoPoint(-16.200000, 115.400000);
+
+    // without method
+    println!("Longitude: {}", geo_point.0);
+    println!("Latitude: {}", geo_point.1);
+
+    // with method
+    geo_point.get_latitude();
+    geo_point.get_longitude();
 }
