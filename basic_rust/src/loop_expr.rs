@@ -1,3 +1,10 @@
+/*
+Note for range
+There are 2 ranges:
+1. Range, it start from 0 and n-1, if we specify this: 0..10, it means range from 0 to 10-1 which is 9
+2. Range Inclusive, it start from 0 and n, if we specify this: 0..=10, it means range from 0 to 10
+*/
+
 #[test]
 fn loop_expr() {
     let mut counter = 0;

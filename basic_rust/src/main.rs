@@ -11,6 +11,12 @@ mod memory_management;
 mod string;
 mod ownership;
 mod loop_expr;
+mod function;
+mod ownership_function;
+mod reference_borrowing;
+mod slice;
+mod struct_type;
+mod struct_type_method;
 
 // for explanation of module here
 // to add another file here, so it can be executed by compiler
